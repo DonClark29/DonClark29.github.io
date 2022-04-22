@@ -1,8 +1,8 @@
-import './index.scss'
-import { useState } from 'react'
-import Loader from 'react-loaders'
-import AnimatedLetters from '../AnimatedLetters'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import "./index.scss";
+import { useState } from "react";
+import Loader from "react-loaders";
+import AnimatedLetters from "../AnimatedLetters";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBootstrap,
   faCss3,
@@ -10,15 +10,15 @@ import {
   faHtml5,
   faJsSquare,
   faReact,
-} from '@fortawesome/free-brands-svg-icons'
+} from "@fortawesome/free-brands-svg-icons";
 
 const About = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
+  const [letterClass, setLetterClass] = useState("text-animate");
   useState(() => {
     return setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
-  }, [])
+      setLetterClass("text-animate-hover");
+    }, 3000);
+  }, []);
 
   return (
     <>
@@ -27,7 +27,7 @@ const About = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+              strArray={["A", "b", "o", "u", "t", " ", "m", "e"]}
               idx={15}
             />
           </h1>
@@ -39,14 +39,17 @@ const About = () => {
             experiences.
           </p>
           <p>
-            I developed a results-driven mindset and a varied set of design and
-            development skills to contribute to the success of my team in a
-            fast-paced agency environment.
+            I started my career at a fast-paced digital marketing agency and
+            developed a varied set of design and development skills. I loved
+            collaborating with the in-house and client teams and I was able to
+            lead a small team of devs to complete a series of client projects.
+            This helped me develop a solution-focused mentality alongside the
+            soft-skills of leadership, organization, and client communication.
           </p>
           <p>
             I am now seeking to specialize my skill set towards front-end web
-            development and tackle challenging collaborative and independent
-            projects with an established IT company.
+            development and I’m excited to spearhead future collaborative and
+            independent projects with an established company.
           </p>
         </div>
         <div className="stage-cube-cont">
@@ -74,7 +77,7 @@ const About = () => {
       </div>
       <Loader type="pacman" />
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;

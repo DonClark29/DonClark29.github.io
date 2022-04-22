@@ -1,18 +1,18 @@
-import { useState } from 'react'
-import WorkImg1 from '../../assets/images/skd-device-view.png'
-import Loader from 'react-loaders'
-import AnimatedLetters from '../AnimatedLetters'
-import Sidebar from '../Sidebar'
-import './index.scss'
-import { Link } from 'react-router-dom'
+import { useState } from "react";
+import WorkImg1 from "../../assets/images/mug-device-view.png";
+import Loader from "react-loaders";
+import AnimatedLetters from "../AnimatedLetters";
+import Sidebar from "../Sidebar";
+import "./index.scss";
+import { Link } from "react-router-dom";
 
 const SkdStudios = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
+  const [letterClass, setLetterClass] = useState("text-animate");
   useState(() => {
     return setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
-  }, [])
+      setLetterClass("text-animate-hover");
+    }, 3000);
+  }, []);
 
   return (
     <>
@@ -31,17 +31,17 @@ const SkdStudios = () => {
                 <AnimatedLetters
                   letterClass={letterClass}
                   strArray={[
-                    'S',
-                    'K',
-                    'D',
-                    ' ',
-                    'S',
-                    't',
-                    'u',
-                    'd',
-                    'i',
-                    'o',
-                    's',
+                    "S",
+                    "K",
+                    "D",
+                    " ",
+                    "S",
+                    "t",
+                    "u",
+                    "d",
+                    "i",
+                    "o",
+                    "s",
                   ]}
                   idx={15}
                 />
@@ -61,8 +61,8 @@ const SkdStudios = () => {
                 <li>
                   <p className="details-title">OVERVIEW</p>
                   <p>
-                    Creating a branded website for California interior design
-                    company
+                    Creating a branded website for an Arizona men’s haircutting
+                    franchise.
                   </p>
                 </li>
               </ul>
@@ -75,15 +75,25 @@ const SkdStudios = () => {
               <div className="text-wrap">
                 <h2 className="title">CONCEPT</h2>
                 <p className="text">
-                  Since the university is near and the main target is students,
-                  I tried to create a stylish atmosphere with a Western feel,
-                  rather than the inorganic atmosphere of a typical hair salon.
-                  For the key visual, I took a picture of the tools and hair
-                  styling products that I usually use, and adjusted it to look
-                  like a magazine while producing a feeling of commitment and
-                  craftsmanship. The main color is a slightly darker floor in
-                  the store, and is adjusted so that there is no difference in
-                  atmosphere from the inside of the store.
+                  The MUG franchise needed a site that better reflected its
+                  brand and services visually and functionally converted more
+                  visitors into customers with booked appointments.
+                  <br /> <br />
+                  I used in-store photos featuring customers of various ages to
+                  help the target audience of boys and men relate and visualize
+                  themselves getting a haircut at a location.
+                  <br />
+                  <br />
+                  Call-to-actions were placed high and low. Customers were
+                  funneled to select a nearby location then book an appointment
+                  online. All contact information was made visible in the top
+                  25% of the page and the rest of the page was left to SEO text
+                  and experiential imagery.
+                  <br />
+                  <br />
+                  For the key visual hook, I used a wooden background to create
+                  a feeling of craftsmanship, organic design, and its coloring
+                  was made to match the iconic wood flooring in all stores.
                 </p>
               </div>
             </div>
@@ -94,15 +104,17 @@ const SkdStudios = () => {
               <div className="text-wrap">
                 <h2 className="title">DEVELOPMENT</h2>
                 <p className="text">
-                  Since the university is near and the main target is students,
-                  I tried to create a stylish atmosphere with a Western feel,
-                  rather than the inorganic atmosphere of a typical hair salon.
-                  For the key visual, I took a picture of the tools and hair
-                  styling products that I usually use, and adjusted it to look
-                  like a magazine while producing a feeling of commitment and
-                  craftsmanship. The main color is a slightly darker floor in
-                  the store, and is adjusted so that there is no difference in
-                  atmosphere from the inside of the store.
+                  I developed a 100% custom-theme for the WordPress CMS and
+                  utilized the Advanced Custom Fields plugin to create reusable
+                  components. This allowed for consistency in design, faster
+                  development time, and also allowed the client and SEO-team to
+                  edit the site content without coding knowledge.
+                  <br />
+                  <br />A map plugin was used and heavily customized to enhance
+                  user experience and allow users to get directions, call
+                  directly, or view a location’s web page. Animations were
+                  simple, instead of reinventing the wheel I used the Animation
+                  on Scroll library.
                 </p>
               </div>
             </div>
@@ -124,7 +136,7 @@ const SkdStudios = () => {
       </div>
       <Loader type="pacman" />
     </>
-  )
-}
+  );
+};
 
-export default SkdStudios
+export default SkdStudios;
