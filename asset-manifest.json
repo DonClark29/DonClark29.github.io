@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6ce4732b.css",
-    "main.js": "/static/js/main.88e9d876.js",
+    "main.js": "/static/js/main.a98dbe75.js",
     "static/js/787.a2cb61a6.chunk.js": "/static/js/787.a2cb61a6.chunk.js",
     "static/media/mug-site-frames.jpg": "/static/media/mug-site-frames.0575468775d4a624ca3a.jpg",
     "static/media/mug-device-view.png": "/static/media/mug-device-view.9dd7d40f99abced5a032.png",
@@ -13,11 +13,11 @@
     "static/media/right-arrow-icon-1.svg": "/static/media/right-arrow-icon-1.264e7bf85d7a27f31051.svg",
     "index.html": "/index.html",
     "main.6ce4732b.css.map": "/static/css/main.6ce4732b.css.map",
-    "main.88e9d876.js.map": "/static/js/main.88e9d876.js.map",
+    "main.a98dbe75.js.map": "/static/js/main.a98dbe75.js.map",
     "787.a2cb61a6.chunk.js.map": "/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6ce4732b.css",
-    "static/js/main.88e9d876.js"
+    "static/js/main.a98dbe75.js"
   ]
 }
